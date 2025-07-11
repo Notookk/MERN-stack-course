@@ -1,0 +1,130 @@
+body{
+    /* background: linear-gradient(to right, rgb(255, 112, 112), rgb(200, 55, 55)); */
+    background-color: rgb(238, 108, 108);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 30px auto;
+    width: 30%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(210, 65, 65);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+
+}
+h1:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+}
+
+.main-container {
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 30px auto;
+    width: 50%;
+    height: 600px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(210, 65, 65);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.form-container label {
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.form-container label:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.form-container input {
+    margin: 10px 0;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.form-container button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: -33px;
+}
+.form-container button:hover {
+    /* background-color: rgb(200, 55, 55); */
+    background-color: transparent 100%;
+    box-shadow: rgb(0, 0, 0) 0 0 15px;
+}
+
+.form-container textarea {
+    margin: 10px 0;
+    width: 53%;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    bottom: -30px;
+}
+
+.form-container textarea:hover {
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+.form-container label[for="message"] {
+    position: relative;
+    bottom: -30px;
+
+}
+.form-container input:hover {
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.form-container label[for="email"] {
+    position: relative;
+    top: -40px;
+}
+.form-container input[type="text"] {
+    position: relative;
+    top: -40px;
+}
+
+.form-container label[for="phone"] {
+    position: relative;
+    top: -15px;
+}
+.form-container input[type="tel"] {
+    position: relative;
+    top: -15px;
+}
