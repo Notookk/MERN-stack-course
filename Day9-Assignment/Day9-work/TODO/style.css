@@ -1,0 +1,167 @@
+main {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    background-image: linear-gradient(to right, #706c6c, #e0e0e0);
+    color: #333;
+    overflow-y: hidden;
+}
+
+h3 {
+    text-align: center;
+    color: #262926;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+.input-wrapper {
+  width: fit-content;
+  margin-left: 600px;
+  height: 45px;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: black 0px 0px 10px;
+}
+
+.icon {
+  width: 30px;
+  fill: rgb(0, 0, 0);
+  margin-left: 8px;
+  transition: all 0.3s;
+}
+.input {
+  max-width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+}
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+  -webkit-text-fill-color: #ffffff;
+}
+.Subscribe-btn {
+  height: 100%;
+  width: 95px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(240, 239, 239);
+  cursor: pointer;
+  background-color: #000000;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.arrow {
+  /* display: none; */
+  position: absolute;
+  margin-right: 150px;
+  transition: all 0.3s;
+}
+.input-wrapper:active .icon {
+  transform: scale(1.3);
+}
+.Subscribe-btn:hover {
+  color: rgb(0, 0, 0);
+}
+.Subscribe-btn:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: right;
+}
+.Subscribe-btn:hover .arrow path {
+  fill: white;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.Subscribe-btn:active {
+  transform: scale(0.9);
+}
+.container {
+    display: flex;
+    margin-left: 560px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 500px;
+    width: 400px;
+    border-radius: 20;
+    box-shadow: black 0px 0px 10px;
+    border-radius: 30px;
+}
+
+#todoList {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    left: 620px;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#todoList li {
+    display: flex;
+}
+
+#todoList button {
+    display: flex;
+    /* position: absolute; */
+    margin-left: 200px;
+    background-color: transparent;
+    box-shadow: black 0px 0px 5px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 20px;
+    gap: 5px;
+}
+
+#todoList button:hover {
+    transform: scale(1.1);
+}
