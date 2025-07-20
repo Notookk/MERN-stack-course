@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/90/168/desktop-wallpaper-new-netflix-series-shadow-and-bone-character-posters-and.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHGUIReRziBnWQDUw6g9ju6h91Ep4zQjCQQ&s" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMCDLmXP9QcVvIqBRPixHuuzB8eVZYKOYPqg984HfS7cSSah3d142ulVQlfhnrudpA_aFAQ_QWKytnypHdSpqw5D0ttultyBBzZmXUwpmr5E4Np9NqTi6l7hMteBh_7RldKedmFk5FK4rT/w919/army-of-thieves-netflix-movie-poster-4k-uhdpaper.com-637.0_b-thumbnail.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjndhqY_VYU6wJfdjkzL-I5crksIj1P5N4Ca0tnecA1iOZ2dUaY0KNHAX_8oJWJ5QLViuE_mrdnvHGFhT4yE3yUgFhjbVmRPx_bvbFQiZB8ZFketKEmsDSETN5RZfibJHGNyFekR-z3nUr2/s1600/How-it-ends-netflix.jpg" alt="Image 4">
+            </div>
+        </div>
+        
+        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="nav-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+        
+        <div class="indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
