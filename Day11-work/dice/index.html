@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>🎲 Dice Roller</h1>
+        <div id="dice">
+            <img src="./assets/dice1.png" alt="Dice 1" id="dice-1" class="dice-face" style="display: block;">
+            <img src="./assets/dice2.png" alt="Dice 2" id="dice-2" class="dice-face" style="display: none;">
+            <img src="./assets/dice3.png" alt="Dice 3" id="dice-3" class="dice-face" style="display: none;">
+            <img src="./assets/dice4.png" alt="Dice 4" id="dice-4" class="dice-face" style="display: none;">
+            <img src="./assets/dice5.png" alt="Dice 5" id="dice-5" class="dice-face" style="display: none;">
+            <img src="./assets/dice6.png" alt="Dice 6" id="dice-6" class="dice-face" style="display: none;">
+        </div>
+        <div id="result">You rolled: <span id="result-number">1</span></div>
+        <button id="roll" onclick="rollDice()">🎲 Roll Dice</button>
+        <p id="instructions">Press Enter or Space to roll</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
