@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Password Strength Checker</h1>
+        <div class="input-container">
+            <input type="text" id="password" placeholder="Enter your password" autocomplete="off">
+        </div>
+        <button id="checkStrength">Check Strength</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        const passwordInput = document.getElementById('password');
+        const checkButton = document.getElementById('checkStrength');
+        const resultDiv = document.getElementById('result');
+
+        function checkPassword() {
+            const password = passwordInput.value;
+            
+            if (!password) {
+                resultDiv.innerHTML = '';
+                return;
+            }
+            
+            let score = 0;
+            
+            if (password.length >= 8) score++;
+            if (/[A-Z]/.test(password)) score++;
+            if (/[a-z]/.test(password)) score++;
+            if (/\d/.test(password)) score++;
+            if (/[!@#$%^&*]/.test(password)) score++;
+            
+            let strength = '';
+            let color = '';
+            
+            if (score <= 2) {
+                strength = 'Weak';
+                color = 'red';
+            } else if (score <= 4) {
+                strength = 'Medium';
+                color = 'orange';
+            } else {
+                strength = 'Strong';
+                color = 'green';
+            }
+            
+            resultDiv.innerHTML = `<div style="color: ${color}; font-weight: bold; font-size: 18px;">${strength} Password</div>`;
+        }
+
+        checkButton.onclick = checkPassword;
+        passwordInput.oninput = checkPassword;
+    </script>
+</body>
+</html>
