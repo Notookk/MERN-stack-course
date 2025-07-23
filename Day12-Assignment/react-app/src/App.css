@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.section-container {
+    padding-top: 20px;
+    min-height: 50vh;
+}
+
+#home {
+    padding-top: 0;
+}
+
+#about {
+    padding-top: 40px;
+    scroll-margin-top: 80px;
+}
+
+#projects {
+    scroll-margin-top: 80px;
+}
+
+#contact {
+    scroll-margin-top: 80px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.placeholder-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.placeholder-section h2 {
+    color: #ff7c2e;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(45deg, #ff7c2e, #ff4757);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.placeholder-section p {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .placeholder-section {
+        padding: 40px 15px;
+    }
+    
+    .placeholder-section h2 {
+        font-size: 2rem;
+    }
+    
+    .placeholder-section p {
+        font-size: 1rem;
+    }
+}

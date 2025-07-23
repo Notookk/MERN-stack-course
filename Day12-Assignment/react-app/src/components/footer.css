@@ -1,0 +1,328 @@
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-text {
+    flex: 1;
+}
+
+.footer-text p {
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.footer-text p:first-child {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-text p:last-child {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255, 124, 46, 0.2);
+    border: 1px solid rgba(255, 124, 46, 0.3);
+    transition: all 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.social-link:hover {
+    background: rgba(255, 124, 46, 0.4);
+    border: 1px solid rgba(255, 124, 46, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 124, 46, 0.3);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+        text-align: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .social-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 25px 10px;
+    }
+    
+    .footer-text p:first-child {
+        font-size: 0.9rem;
+    }
+    
+    .footer-text p:last-child {
+        font-size: 0.8rem;
+    }
+    
+    .social-link {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Interactive Social Media Card Styles */
+.social-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social-media-card {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: lightgrey;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 1s ease-in-out;
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 100% 107%, #ff89cc 0%, #9cb8ec 30%, #00ffee 60%, #62c2fe 100%);
+}
+
+.logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+}
+
+.logo .logo-svg {
+    fill: white;
+    width: 25px;
+    height: 25px;
+}
+
+.social-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.icon .svg {
+    fill: rgba(255, 255, 255, 0.797);
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover .svg {
+    fill: white;
+}
+
+.box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -70%;
+    left: -70%;
+}
+
+.box1::before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #ff53d4 60%, #62c2fe 90%);
+}
+
+.box1:hover::before {
+    opacity: 1;
+}
+
+.box1:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+}
+
+.box2 {
+    width: 50%;
+    height: 50%;
+    bottom: -50%;
+    left: -50%;
+    transition-delay: 0.2s;
+}
+
+.box2::before {
+    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+}
+
+.box2:hover::before {
+    opacity: 1;
+}
+
+.box2:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+}
+
+.box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -30%;
+    left: -30%;
+    transition-delay: 0.4s;
+}
+
+.box3::before {
+    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+}
+
+.box3:hover::before {
+    opacity: 1;
+}
+
+.box3:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+}
+
+.box4 {
+    width: 10%;
+    height: 10%;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 0.6s;
+}
+
+.social-media-card:hover {
+    transform: scale(1.1);
+}
+
+.social-media-card:hover .box {
+    bottom: -1px;
+    left: -1px;
+}
+
+.social-media-card:hover .logo {
+    transform: translate(0, 0);
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Responsive adjustments for the social media card */
+@media (max-width: 768px) {
+    .social-card-container {
+        margin: 15px 0;
+    }
+    
+    .social-media-card {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo .logo-svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 25px 10px;
+    }
+    
+    .footer-text p:first-child {
+        font-size: 0.9rem;
+    }
+    
+    .footer-text p:last-child {
+        font-size: 0.8rem;
+    }
+    
+    .social-link {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .social-media-card {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .logo .logo-svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .box {
+        padding: 8px;
+    }
+}
