@@ -11,6 +11,10 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    const existing = localStorage.getItem('file');
+    const submissions = existing ? JSON.parse(existing) : [];
+    submissions.push(form);
+    localStorage.setItem('file', JSON.stringify(submissions));
     setSubmitted(true);
   };
 
