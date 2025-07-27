@@ -1,0 +1,20 @@
+{
+  "name": "day16-assignment",
+  "version": "1.0.0",
+  "description": "A MERN stack project for Day 16 assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "mern-stack",
+    "day16-assignment"
+  ],
+  "author": "author: Aritra pradhan <aritrapradhan41@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "react-router-dom": "^7.7.1",
+    "tailwindcss": "^4.1.11"
+  }
+}
