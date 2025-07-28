@@ -13,6 +13,7 @@ function Footer() {
         <span className="footer-desc">&copy; {new Date().getFullYear()} Recipify. All rights reserved.</span>
         <div className="footer-social">
         <span className="footer-social-icon" title="Instagram">
+          <a href='https://instagram.com/xotik.ari' target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block' }}>
           <span style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -26,10 +27,10 @@ function Footer() {
             color: '#1f2937'
           }}>
             <FontAwesomeIcon icon={faInstagram} />
-          </span>
+          </span> </a>
         </span>
         <span className="footer-social-icon" title="Website">
-          <a href="https://recipify-app.com" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block' }}>
+          <a href="https://morning.is-a.dev" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block' }}>
             <span style={{
               display: 'inline-flex',
               alignItems: 'center',
