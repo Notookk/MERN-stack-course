@@ -89,7 +89,7 @@ li {
 
 li a {
     padding: 0.5rem 1rem;
-    border-radius: 30px;
+    border-radius: 15px;
     transition: background 0.2s, color 0.2s;
     display: flex;
     align-items: center;
@@ -130,15 +130,16 @@ input[type="search"]::placeholder {
 }
 
 h1 {
-    color: #fff;
+    color: #fbbf24;
     font-size: 2rem;
     font-weight: bold;
     margin-left: 20px;
     margin-top: -10px;
 }
 h1:hover {
-    color: #fbbf24;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    transform: scale(1.05);
+    color: #f59e0b;
 }
 .your {
     position: absolute;
